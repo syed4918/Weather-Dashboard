@@ -96,3 +96,34 @@ header h1{
 #fiveDayInfo{
     border-top: 1px solid black;
 }
+
+#fiveForecast{
+    display: none;
+}
+
+#fiveDayInfo div{
+    background-color: rgb(190, 228, 24);
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fiveDayInfo div div{
+    width: fit-content;
+}
+
+.goodUV{
+    background-color: rgb(12, 235, 12);
+}
+
+.moderateUV{
+    background-color: rgb(173, 147, 99);
+}
+
+.badUV{
+    background-color: rgb(77, 75, 59);
+}

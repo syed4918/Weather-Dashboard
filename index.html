@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather DashBoard</title>
-    <link rel="stylesheet" href="assets\css\style.css">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="Assets\css\style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" defer></script>
     <script src="Assets\js\main.js" defer></script>
-</head>
 
+</head>
 <body>
     <header><h1>Weather Dashboard</h1></header>
     <section class="horizontalAlignment">
         <section id="searchArea">
             <h2>Search for a city:</h2>
             <input type="text" id="submitText"></input>
-            <input type="submit" id="submitButton"></input>
-            <section id="searchHistory"></section>
+            <button id="submitButton" onclick="searchCity()">Search</button>
+            <section class="verticalAlignment" id="searchHistory" onclick="showFromHistory(event)"></section>
         </section>
         <aside class="verticalAlignment">
             <section id="currentInfo">
                 <div class="horizontalAlignment">
-                    <h1 id="infoName">Current City</h1>
+                    <h1 id="infoName"></h1>
                     <img id="icon" src="" alt="Weather Icon">
                 </div>
-                <div id="Temperature">Temperature:</div>
-                <div id="Wind">Wind:</div>
-                <div id="Humidity">Humidity:</div>
-                <div id="UV">UV Index:</div>
+                <div id="infoTemp"></div>
+                <div id="infoWind"></div>
+                <div id="infoHumid"></div>
+                <div id="infoUV"></div>
             </section>
-            <section id="fiveDayInfo"></section>
+            <h3 id="fiveForecast">Five Day Forecast:</h3>
+            <section class="horizontalAlignment" id="fiveDayInfo">
+                
+            </section>
         </aside>
     </section>    
 </body>
