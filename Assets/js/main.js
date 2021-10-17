@@ -8,7 +8,7 @@ const infoHumid = document.getElementById("Humidity");
 const infoUV = document.getElementById("UV");
 
 var currentTime = moment();
-const apiKey = "";
+const apiKey = "d70ef8022f47b07da7d017d3bf99f53b";
 
 let cityHistory = [];
 if (localStorage.getItem("cityHistory") != null) {
